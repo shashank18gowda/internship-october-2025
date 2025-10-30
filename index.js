@@ -4,7 +4,7 @@ import connectDB from "./src/helper/dbConnection.js";
 import router from "./routes.js";
 
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ quiet: true });
 
 //to allow json formats and accept data from urlencoded
 app.use(express.json());
