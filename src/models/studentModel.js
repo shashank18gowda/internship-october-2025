@@ -13,9 +13,18 @@ const studentSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  image: {
+    type: String,
+    // type: [String], //to store multiple image
+    required: true,
+  },
+  teacher_id: {
+    type: String,
+    required: true,
+  },
   isactive: {
     type: Number,
-    defaultValue: 1,
+    default: 1,
   },
 });
 
